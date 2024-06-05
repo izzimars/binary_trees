@@ -1,4 +1,4 @@
-#include "_BIANARY_TREE_H"
+#include "binary_trees.h"
 #include <stdlib.h>
 
 /**
