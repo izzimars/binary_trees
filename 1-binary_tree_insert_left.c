@@ -1,5 +1,6 @@
 #include "binary_trees.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * binary_tree_insert_left - create a binary node.
@@ -31,5 +32,6 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 	left = parent->left;
 	parent->left = temp;
 	temp->left = left;
+	left->parent = temp;
 	return (temp);
 }
