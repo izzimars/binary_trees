@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * binary_tree_is_leaf - create a binary node.
+ * binary_tree_is_root - create a binary node.
  * Description: A function that creates a new node of type
  *              binary tree and attach it to a parent node.
  * @node: a pointer to a binatr_tree node that serve as a parent.
@@ -13,7 +13,7 @@
 
 int binary_tree_is_root(const binary_tree_t *node)
 {
-	if (node->parent == NULL)
+	if (node->parent == NULL && node != NULL)
 	{
 		return (1);
 	}
